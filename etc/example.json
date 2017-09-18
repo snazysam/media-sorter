@@ -1,0 +1,93 @@
+
+{
+  // Example naming convention file
+
+  // Log Level.
+  // One of error, warning, info, debug, silly:
+  'loglevel': "info",
+
+  // Action to attempt, one of move, copy, link, or artwork
+  // The artwork option just scrapes media in place, fetches images as needed
+  'action': 'move',
+
+  // Replace destination files?
+  'replace': false,
+
+  // Should we try to unpack archives?
+  'unpack': true,
+
+  // Cleanup archives after sorting (disable if symlinking)
+  'cleanup': true,
+
+  // Type of media? tv, movie or auto
+  'mediatype': 'auto',
+
+  // Replace destination files if they exist? This includes images and other files.
+  'replace': false,
+
+  // Lookup from TMDB?
+  'lookup': true,
+
+  // TMDB lookup API key
+  'key': ''
+
+  // Disable cache for quicker lookups?
+  'nocache': false,
+
+  // Padding for numeric tags
+  // Eg, 7 into 07.
+  'pad-tags': true,
+
+
+  // ----------------
+  // Other options
+  // ----------------
+
+  // Include adult titles when scraping
+  'include-adult': false,
+
+  // Images types to fetch if available.
+  //  Supports the following types:
+  //  show-backdrop : TV Show fanart / backgrounds
+  //  show-poster : TV Show poster
+  //  season-poster : TV Show Season posters
+  //  episode-still : TV Show Episode thumbnails
+  //  movie-backdrop : Movie fanart / backgrounds
+  //  movie-poster : Movie poster
+  'images': [ 'show-backdrop', 'show-poster', 'season-poster', 'episode-still', 'movie-backdrop', 'movie-poster' ],
+
+  // Format for TV files if renaming.
+  // Tags are surrounded by hashtags.
+  // Directories are supported, converted for win32 as needed
+  // Following tags are recognised:
+  //  #name#: The show name (eg The Simpsons)
+  //  #year#: Year for the series
+  //  #season_number#: Season number (eg 7 or 17 )
+  //  #episode_number#: Episode number (eg 7 or 17 )
+  //  #episode_name#': Episode name, 'Treehouse of horrors XI'
+  'tv-format': '#name#/Season #season_number#/#episode_number# - #episode_name#',
+ 
+  // Format for Movie files if renaming
+  // Tags are surrounded by hashtags
+  // Directories are supported
+  // Following tags are supported:
+  //  #name#: Name of the movie
+  //  #year#: Year of the movie
+  'movie-format': '#name# (#year#)/#name#',
+
+  // Subtitle naming format
+  // Same tags as above respectively
+  'tv-sub-format': '#name#/Season #season_number#/#episode_number# - #episode_name#',
+  'movie-sub-format': '#name# (#year#)/#name#',
+
+  // Image naming options
+  'tv-poster-format': '#name#/poster',
+  'tv-season-poster-format': '#name#/Season #season_number#/poster',
+  'tv-show-fanart-format': '#name#/fanart',
+  'tv-still-format': '#name#/Season #season_number#/#episode_number# - #episode_name#',
+  'movie-poster-format': '#name# (#year#)/#name#',
+  'movie-fanart-format': '#name# (#year#)/fanart'
+
+}
+
+

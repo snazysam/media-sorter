@@ -1,0 +1,56 @@
+
+{
+  // Simple configuration file
+
+  // Log Level.
+  'loglevel': "info",
+
+  // Default action
+  'action': 'copy',
+
+  // Always unpack archives
+  'unpack': true,
+
+  // Type of media? tv, movie or auto
+  'mediatype': 'auto',
+
+  // Replace destination files 
+  'replace': true,
+
+  // Use TMDB cache
+  'nocache': false,
+
+  // No adult titles
+  'include-adult': false,
+
+  // Lookups enabled
+  'lookup': true,
+
+  // TMDB lookup API key
+  'key': ''
+
+  // Don't fetch images
+  'images': [ ],
+
+  // Naming format
+  'tv-format': '#name#/Season #season_number#/#episode_number# - #episode_name#',
+  'movie-format': '#name# (#year#)/#name#',
+
+  // Subtitle naming format
+  'tv-sub-format': '#name#/Season #season_number#/#episode_number# - #episode_name#',
+  'movie-sub-format': '#name# (#year#)/#name#',
+
+  // Padding for numeric tags
+  'pad-tags': true,
+
+  // Image naming options
+  'tv-poster-format': '',
+  'tv-season-poster-format': '',
+  'tv-show-fanart-format': '',
+  'tv-still-format': '',
+  'movie-poster-format': '',
+  'movie-fanart-format': ''
+
+}
+
+
